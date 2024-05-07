@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Other side of the Bridge
+{% endblock %}
+
+{% block body %}
+<div>
+
+  {% if user %}
+  <h2>Welcome, {{ user }}</h2>
+  {% else %}
+  <h2>Welcome, unknown user</h2>
+  {% endif %}
+
+  <p>
+    Congratulations on crossing the bridge of death!
+  </p>
+  <p>
+    We have complimentary {{ userColor }} M&Ms for you to refuel on your quest to {{ userQuest }}
+  </p>
+
+</div>
+{% endblock %}

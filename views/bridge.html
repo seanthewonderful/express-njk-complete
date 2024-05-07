@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bridge of Death
+{% endblock %}
+
+{% block body %}
+<div>
+  <h4>
+    Who would cross the bridge of death must answer me these questions three, ere the other side he see.
+  </h4>
+
+  <form action="/other-side" method="POST">
+    What is your name? 
+    <input type="text" name="name" />
+    What is your quest? 
+    <input type="text" name="quest" />
+    What is your favorite color? 
+    <input type="text" name="color" />
+
+    <input type="submit">
+  </form>
+</div>
+{% endblock %}

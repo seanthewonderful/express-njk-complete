@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Forms Page
+{% endblock %}
+
+{% block body %}
+<form action="/welcome" method="GET">
+  Please enter your name
+  <input type="text" name="person" />
+  What is your favorite number?
+  <input type="number" name="favNumber" />
+  <input type="submit" />
+</form>
+
+<form action="/food" method="POST">
+  What is your favorite food?
+  <input type="text" name="favFood" />
+  <input type="submit" />
+</form>
+
+<form action="/user/Kronk" method="POST">
+  What is your favorite color?
+  <input type="text" name="favColor" />
+  <input type="submit">
+</form>
+{% endblock %}

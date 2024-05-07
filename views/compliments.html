@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Compliments Page
+{% endblock %}
+
+{% block body %}
+<div>
+  <h3>Hello you, I think you are so:</h3>
+
+  <ul>
+    {% for compliment in compliments %}
+    <li>{{ compliment }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
